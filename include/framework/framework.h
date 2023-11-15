@@ -5,10 +5,13 @@
 #include "glad.h"
 #include <GLFW/glfw3.h>
 
+#define SCREEN_WIDTH  800
+#define SCREEN_HEIGHT 600
+
 namespace CYXDemo {
 class Framework {
 public:
-    Framework(int width = 800, int height = 600, std::string title = "Youxu Chen: OpenGL Demo Window");
+    Framework(int width = SCREEN_WIDTH, int height = SCREEN_HEIGHT, std::string title = "Youxu Chen: OpenGL Demo Window");
     ~Framework();
 
     void Init();    // create window
